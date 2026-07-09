@@ -1,0 +1,276 @@
+.footer {
+  width: 100%;
+  background:
+    linear-gradient(rgba(0, 26, 41, 0.94), rgba(0, 26, 41, 0.94)),
+    url("/images/footer-bg-image-prime.jpg") center/cover no-repeat;
+  color: var(--sunex-white);
+  padding: 90px 0 0;
+  overflow: hidden;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1.35fr 0.9fr 0.9fr 1.2fr;
+  gap: 46px;
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+
+.top > * {
+  min-width: 0;
+}
+
+.top p {
+  max-width: 360px;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 22px 0 0;
+}
+
+.top h3 {
+  margin: 0 0 22px;
+  color: var(--sunex-white);
+  font-family: var(--heading-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.top a {
+  display: block;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 15px;
+  line-height: 1.45;
+  margin: 0 0 12px;
+  transition: color 0.25s ease, padding-left 0.25s ease;
+}
+
+.top a:hover {
+  color: var(--sunex-accent);
+  padding-left: 4px;
+}
+
+.form {
+  width: 100%;
+  max-width: 360px;
+  margin-top: 22px;
+  display: flex;
+  align-items: stretch;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--sunex-white);
+}
+
+.form input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  padding: 15px 16px;
+  outline: 0;
+  color: var(--sunex-dark);
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.form input::placeholder {
+  color: rgba(0, 26, 41, 0.55);
+}
+
+.form button {
+  width: 56px;
+  flex: 0 0 56px;
+  border: 0;
+  background: var(--sunex-accent);
+  color: var(--sunex-white);
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.form button:hover {
+  background: var(--sunex-dark);
+}
+
+.bottom {
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Large laptops */
+@media (max-width: 1200px) {
+  .footer {
+    padding-top: 80px;
+  }
+
+  .top {
+    grid-template-columns: 1.2fr 0.8fr 0.8fr 1.1fr;
+    gap: 36px;
+    padding-bottom: 54px;
+  }
+
+  .top h3 {
+    font-size: 22px;
+  }
+
+  .top p,
+  .top a {
+    font-size: 14px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .footer {
+    padding-top: 72px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .top {
+    grid-template-columns: 1fr 1fr;
+    gap: 42px 36px;
+    padding-bottom: 50px;
+  }
+
+  .top p {
+    max-width: 100%;
+    margin-top: 18px;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .top {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding-bottom: 42px;
+  }
+
+  .top h3 {
+    margin-bottom: 16px;
+    font-size: 22px;
+  }
+
+  .top p {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .top a {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .form {
+    margin-top: 18px;
+  }
+
+  .form input {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .form button {
+    width: 52px;
+    flex-basis: 52px;
+  }
+
+  .bottom {
+    padding: 20px 0;
+    font-size: 13px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .footer {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .top {
+    gap: 30px;
+    padding-bottom: 36px;
+  }
+
+  .top h3 {
+    font-size: 21px;
+  }
+
+  .top p {
+    font-size: 13.5px;
+  }
+
+  .top a {
+    font-size: 13.5px;
+  }
+
+  .form {
+    flex-direction: row;
+    border-radius: 7px;
+  }
+
+  .form input {
+    padding: 13px 12px;
+  }
+
+  .form button {
+    width: 48px;
+    flex-basis: 48px;
+  }
+
+  .bottom {
+    padding: 18px 0;
+    font-size: 12.5px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .footer {
+    padding-top: 44px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .top {
+    gap: 26px;
+    padding-bottom: 32px;
+  }
+
+  .top h3 {
+    font-size: 20px;
+  }
+
+  .top p,
+  .top a {
+    font-size: 13px;
+  }
+
+  .form input {
+    font-size: 13px;
+  }
+
+  .form button {
+    width: 46px;
+    flex-basis: 46px;
+  }
+}

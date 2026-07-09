@@ -1,0 +1,15 @@
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.two { grid-template-columns: repeat(2, 1fr); }
+.card { padding: 32px; border-radius: 12px; background: var(--sunex-white); box-shadow: var(--shadow-soft); }
+.card h3 { margin: 0 0 12px; color: var(--sunex-dark); font-family: var(--heading-font); font-size: 28px; line-height: 1.2; }
+.card p, .card li { color: var(--sunex-text); line-height: 1.75; }
+.imageCard { border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft); }
+.imageCard img { width: 100%; height: 280px; object-fit: cover; }
+.teamImage img { height: 340px; }
+.contactGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+.form { padding: 34px; border-radius: 12px; background: var(--sunex-white); box-shadow: var(--shadow-soft); display: grid; gap: 16px; }
+.form input, .form textarea, .form select { width: 100%; border: 1px solid rgba(0,26,41,.12); border-radius: 7px; padding: 14px; outline: 0; }
+.form textarea { min-height: 140px; resize: vertical; }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; }
+@media (max-width: 1024px) { .grid, .two, .contactGrid, .gallery { grid-template-columns: 1fr; } }

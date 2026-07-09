@@ -1,0 +1,322 @@
+/* [project]/src/components/ui/PageHeader.module.css [app-client] (css) */
+.PageHeader-module__HZea0q__header {
+  color: var(--sunex-white);
+  background: linear-gradient(90deg, #001a29eb, #001a2994), url("/images/page-header-bg.jpg") center / cover no-repeat;
+  padding: 140px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.PageHeader-module__HZea0q__header p {
+  color: #fffc;
+  margin: 0 0 16px;
+  font-weight: 700;
+}
+
+.PageHeader-module__HZea0q__header h1 {
+  max-width: 850px;
+  color: var(--sunex-white);
+  font-family: var(--heading-font);
+  letter-spacing: -.055em;
+  margin: 0;
+  font-size: clamp(52px, 8vw, 96px);
+  font-weight: 600;
+  line-height: .95;
+}
+
+.PageHeader-module__HZea0q__header span {
+  color: #ffffffc7;
+  max-width: 680px;
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+  display: block;
+}
+
+/* [project]/src/components/ui/SectionTitle.module.css [app-client] (css) */
+.SectionTitle-module__h10XBq__wrap {
+  margin-bottom: 44px;
+}
+
+.SectionTitle-module__h10XBq__wrap h3 {
+  color: var(--sunex-dark);
+  background: #f4f8fa;
+  border-radius: 999px;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  padding: 7px 16px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  display: inline-flex;
+}
+
+.SectionTitle-module__h10XBq__wrap h3:before {
+  content: "";
+  background: var(--sunex-accent);
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+}
+
+.SectionTitle-module__h10XBq__wrap h2 {
+  max-width: 760px;
+  color: var(--sunex-dark);
+  font-family: var(--heading-font);
+  letter-spacing: -.045em;
+  margin: 0;
+  font-size: clamp(38px, 5vw, 70px);
+  font-weight: 600;
+  line-height: .98;
+}
+
+.SectionTitle-module__h10XBq__center {
+  text-align: center;
+}
+
+.SectionTitle-module__h10XBq__center h2 {
+  margin-inline: auto;
+}
+
+.SectionTitle-module__h10XBq__light h3 {
+  color: var(--sunex-white);
+  background: #ffffff1a;
+}
+
+.SectionTitle-module__h10XBq__light h2 {
+  color: var(--sunex-white);
+}
+
+@media (max-width: 767px) {
+  .SectionTitle-module__h10XBq__wrap {
+    margin-bottom: 34px;
+  }
+
+  .SectionTitle-module__h10XBq__wrap h2 {
+    font-size: clamp(36px, 11vw, 52px);
+  }
+}
+
+/* [project]/src/components/sections/home/PricingSection.module.css [app-client] (css) */
+.PricingSection-module__ygdM-G__grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 24px;
+  width: min(100% - 48px, 1180px);
+  margin: 46px auto 0;
+  display: grid;
+}
+
+.PricingSection-module__ygdM-G__card {
+  background: var(--sunex-white);
+  min-width: 0;
+  height: 100%;
+  box-shadow: var(--shadow-soft);
+  border-radius: 12px;
+  flex-direction: column;
+  padding: 30px 24px;
+  transition: all .35s;
+  display: flex;
+}
+
+.PricingSection-module__ygdM-G__card:hover {
+  transform: translateY(-8px);
+}
+
+.PricingSection-module__ygdM-G__featured {
+  background: var(--sunex-dark);
+  color: var(--sunex-white);
+  transform: translateY(-14px);
+}
+
+.PricingSection-module__ygdM-G__featured:hover {
+  transform: translateY(-20px);
+}
+
+.PricingSection-module__ygdM-G__card h3 {
+  color: inherit;
+  font-family: var(--heading-font);
+  margin: 0 0 16px;
+  font-size: 25px;
+  line-height: 1.15;
+}
+
+.PricingSection-module__ygdM-G__price {
+  color: var(--sunex-accent);
+  font-family: var(--heading-font);
+  margin-bottom: 10px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.PricingSection-module__ygdM-G__price span {
+  font-family: var(--body-font);
+  color: currentColor;
+  opacity: .7;
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+.PricingSection-module__ygdM-G__setupFee {
+  color: inherit;
+  opacity: .72;
+  margin: 0 0 22px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.PricingSection-module__ygdM-G__card h4 {
+  color: inherit;
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.PricingSection-module__ygdM-G__card p {
+  color: inherit;
+  opacity: .78;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.45;
+  display: flex;
+}
+
+.PricingSection-module__ygdM-G__card svg {
+  color: var(--sunex-accent);
+  flex: none;
+  margin-top: 2px;
+}
+
+.PricingSection-module__ygdM-G__card a {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+@media (max-width: 1200px) {
+  .PricingSection-module__ygdM-G__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    width: min(100% - 44px, 980px);
+  }
+
+  .PricingSection-module__ygdM-G__card {
+    padding: 34px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .PricingSection-module__ygdM-G__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px;
+    width: min(100% - 48px, 760px);
+    margin-top: 40px;
+  }
+
+  .PricingSection-module__ygdM-G__featured {
+    transform: none;
+  }
+
+  .PricingSection-module__ygdM-G__featured:hover {
+    transform: translateY(-8px);
+  }
+
+  .PricingSection-module__ygdM-G__card {
+    padding: 30px 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .PricingSection-module__ygdM-G__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    width: min(100% - 32px, 100%);
+    margin-top: 34px;
+  }
+
+  .PricingSection-module__ygdM-G__card {
+    padding: 28px 22px;
+  }
+
+  .PricingSection-module__ygdM-G__card h3 {
+    font-size: 24px;
+  }
+
+  .PricingSection-module__ygdM-G__price {
+    font-size: 36px;
+  }
+
+  .PricingSection-module__ygdM-G__card a {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .PricingSection-module__ygdM-G__grid {
+    gap: 22px;
+    width: min(100% - 24px, 100%);
+    margin-top: 30px;
+  }
+
+  .PricingSection-module__ygdM-G__card {
+    border-radius: 10px;
+    padding: 26px 20px;
+  }
+
+  .PricingSection-module__ygdM-G__card h3 {
+    margin-bottom: 14px;
+    font-size: 23px;
+  }
+
+  .PricingSection-module__ygdM-G__price {
+    font-size: 34px;
+  }
+
+  .PricingSection-module__ygdM-G__price span {
+    font-size: 13px;
+  }
+
+  .PricingSection-module__ygdM-G__setupFee {
+    margin-bottom: 20px;
+    font-size: 12.5px;
+  }
+
+  .PricingSection-module__ygdM-G__card h4 {
+    font-size: 14px;
+  }
+
+  .PricingSection-module__ygdM-G__card p {
+    font-size: 13.5px;
+    line-height: 1.45;
+  }
+}
+
+@media (max-width: 360px) {
+  .PricingSection-module__ygdM-G__grid {
+    gap: 20px;
+    width: min(100% - 20px, 100%);
+  }
+
+  .PricingSection-module__ygdM-G__card {
+    padding: 24px 18px;
+  }
+
+  .PricingSection-module__ygdM-G__card h3 {
+    font-size: 21px;
+  }
+
+  .PricingSection-module__ygdM-G__price {
+    font-size: 31px;
+  }
+
+  .PricingSection-module__ygdM-G__card p {
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=src_components_0sptjb7._.css.map*/

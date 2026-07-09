@@ -1,0 +1,18 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about-us/page": "/about-us",
+  "/blog/[slug]/page": "/blog/[slug]",
+  "/blog/page": "/blog",
+  "/contact-us/page": "/contact-us",
+  "/faqs/page": "/faqs",
+  "/image-gallery/page": "/image-gallery",
+  "/our-team/page": "/our-team",
+  "/page": "/",
+  "/pricing-plans/page": "/pricing-plans",
+  "/projects/page": "/projects",
+  "/services/[slug]/page": "/services/[slug]",
+  "/services/page": "/services",
+  "/testimonials/page": "/testimonials",
+  "/video-gallery/page": "/video-gallery"
+}

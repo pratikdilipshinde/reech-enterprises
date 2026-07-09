@@ -1,0 +1,208 @@
+/* [project]/src/components/sections/home/WhyChooseSection.module.css [app-client] (css) */
+.WhyChooseSection-module__3zTl8W__grid {
+  grid-template-columns: .9fr 1.1fr;
+  align-items: center;
+  gap: 70px;
+  width: min(100% - 48px, 1180px);
+  margin-inline: auto;
+  display: grid;
+}
+
+.WhyChooseSection-module__3zTl8W__images {
+  min-height: 560px;
+  position: relative;
+}
+
+.WhyChooseSection-module__3zTl8W__mainImage {
+  object-fit: cover;
+  border-radius: 12px;
+  width: 84%;
+  height: 560px;
+  display: block;
+}
+
+.WhyChooseSection-module__3zTl8W__smallImage {
+  object-fit: cover;
+  border: 10px solid var(--sunex-white);
+  width: 250px;
+  height: 250px;
+  box-shadow: var(--shadow-large);
+  border-radius: 12px;
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+}
+
+.WhyChooseSection-module__3zTl8W__list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+  display: grid;
+}
+
+.WhyChooseSection-module__3zTl8W__list div {
+  min-width: 0;
+  color: var(--sunex-dark);
+  background: var(--sunex-white);
+  border: 1px solid #001a2914;
+  border-radius: 10px;
+  align-items: center;
+  gap: 12px;
+  padding: 18px;
+  font-weight: 800;
+  line-height: 1.35;
+  transition: all .3s;
+  display: flex;
+}
+
+.WhyChooseSection-module__3zTl8W__list div:hover {
+  border-color: #4ca62638;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px #001a2914;
+}
+
+.WhyChooseSection-module__3zTl8W__list svg {
+  color: var(--sunex-accent);
+  flex: none;
+}
+
+@media (max-width: 1200px) {
+  .WhyChooseSection-module__3zTl8W__grid {
+    gap: 48px;
+    width: min(100% - 44px, 980px);
+  }
+
+  .WhyChooseSection-module__3zTl8W__images {
+    min-height: 500px;
+  }
+
+  .WhyChooseSection-module__3zTl8W__mainImage {
+    height: 500px;
+  }
+
+  .WhyChooseSection-module__3zTl8W__smallImage {
+    border-width: 8px;
+    width: 220px;
+    height: 220px;
+    bottom: 36px;
+  }
+
+  .WhyChooseSection-module__3zTl8W__list {
+    gap: 16px;
+  }
+
+  .WhyChooseSection-module__3zTl8W__list div {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .WhyChooseSection-module__3zTl8W__grid {
+    grid-template-columns: 1fr;
+    gap: 52px;
+    width: min(100% - 48px, 760px);
+  }
+
+  .WhyChooseSection-module__3zTl8W__images {
+    width: 100%;
+    max-width: 620px;
+    min-height: 520px;
+    margin-inline: auto;
+  }
+
+  .WhyChooseSection-module__3zTl8W__mainImage {
+    width: 82%;
+    height: 520px;
+  }
+
+  .WhyChooseSection-module__3zTl8W__smallImage {
+    width: 230px;
+    height: 230px;
+    bottom: 32px;
+  }
+
+  .WhyChooseSection-module__3zTl8W__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .WhyChooseSection-module__3zTl8W__grid {
+    gap: 36px;
+    width: min(100% - 32px, 100%);
+  }
+
+  .WhyChooseSection-module__3zTl8W__images {
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .WhyChooseSection-module__3zTl8W__mainImage {
+    aspect-ratio: 16 / 11;
+    object-fit: cover;
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+  }
+
+  .WhyChooseSection-module__3zTl8W__smallImage {
+    display: none;
+  }
+
+  .WhyChooseSection-module__3zTl8W__list {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .WhyChooseSection-module__3zTl8W__list div {
+    padding: 16px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .WhyChooseSection-module__3zTl8W__grid {
+    gap: 30px;
+    width: min(100% - 24px, 100%);
+  }
+
+  .WhyChooseSection-module__3zTl8W__mainImage {
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+  }
+
+  .WhyChooseSection-module__3zTl8W__list {
+    gap: 12px;
+  }
+
+  .WhyChooseSection-module__3zTl8W__list div {
+    border-radius: 9px;
+    gap: 10px;
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .WhyChooseSection-module__3zTl8W__list svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .WhyChooseSection-module__3zTl8W__grid {
+    gap: 26px;
+    width: min(100% - 20px, 100%);
+  }
+
+  .WhyChooseSection-module__3zTl8W__list div {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .WhyChooseSection-module__3zTl8W__list svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+/*# sourceMappingURL=src_components_sections_home_WhyChooseSection_module_css_1igg3k2._.single.css.map*/

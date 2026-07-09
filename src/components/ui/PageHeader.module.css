@@ -1,0 +1,4 @@
+.header { position: relative; padding: 140px 0; color: var(--sunex-white); background: linear-gradient(90deg, rgba(0,26,41,.92), rgba(0,26,41,.58)), url('/images/page-header-bg.jpg') center/cover no-repeat; overflow: hidden; }
+.header p { margin: 0 0 16px; color: rgba(255,255,255,.8); font-weight: 700; }
+.header h1 { max-width: 850px; margin: 0; color: var(--sunex-white); font-family: var(--heading-font); font-size: clamp(52px, 8vw, 96px); line-height: .95; letter-spacing: -.055em; font-weight: 600; }
+.header span { display: block; max-width: 680px; margin-top: 24px; color: rgba(255,255,255,.78); font-size: 18px; line-height: 1.7; }

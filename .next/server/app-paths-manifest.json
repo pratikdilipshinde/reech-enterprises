@@ -1,0 +1,18 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about-us/page": "app/about-us/page.js",
+  "/blog/[slug]/page": "app/blog/[slug]/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/contact-us/page": "app/contact-us/page.js",
+  "/faqs/page": "app/faqs/page.js",
+  "/image-gallery/page": "app/image-gallery/page.js",
+  "/our-team/page": "app/our-team/page.js",
+  "/page": "app/page.js",
+  "/pricing-plans/page": "app/pricing-plans/page.js",
+  "/projects/page": "app/projects/page.js",
+  "/services/[slug]/page": "app/services/[slug]/page.js",
+  "/services/page": "app/services/page.js",
+  "/testimonials/page": "app/testimonials/page.js",
+  "/video-gallery/page": "app/video-gallery/page.js"
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/sections/home/BlogSection.module.css"],"sourcesContent":[".grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }\n.grid article { background: var(--sunex-white); border-radius: 12px; box-shadow: var(--shadow-soft); overflow: hidden; }\n.image { height: 250px; }\n.image img { width: 100%; height: 100%; object-fit: cover; }\n.content { padding: 26px; }\n.content span { color: var(--sunex-accent); font-weight: 800; font-size: 14px; }\n.content h2 { margin: 12px 0; color: var(--sunex-dark); font-family: var(--heading-font); font-size: 26px; line-height: 1.2; }\n.content p { margin: 0 0 18px; }\n.content > a:last-child { color: var(--sunex-dark); font-weight: 800; }\n.content > a:last-child:hover, .content h2 a:hover { color: var(--sunex-accent); }\n@media (max-width: 1024px) { .grid { grid-template-columns: 1fr; } }\n"],"names":[],"mappings":"AAAA;;;;;;AACA;;;;;;;AACA;;;;AACA;;;;;;AACA;;;;AACA;;;;;;AACA;;;;;;;;AACA;;;;AACA;;;;;AACA;;;;AACA;EAA6B"}}]
+}

@@ -1,0 +1,274 @@
+.section {
+  overflow: hidden;
+}
+
+.grid {
+  width: min(100% - 48px, 1180px);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.left {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.image {
+  width: 100%;
+  max-width: 520px;
+  margin: 28px 0 0;
+  border-radius: 14px;
+  overflow: hidden;
+  align-self: flex-start;
+}
+
+.image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.faqs {
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+  width: 100%;
+}
+
+.faqs article {
+  border: 1px solid rgba(0, 26, 41, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--sunex-white);
+  transition: all 0.3s ease;
+}
+
+.faqs article:hover {
+  border-color: rgba(76, 166, 38, 0.25);
+  box-shadow: 0 12px 32px rgba(0, 26, 41, 0.07);
+}
+
+.faqs button {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px;
+  border: 0;
+  background: transparent;
+  color: var(--sunex-dark);
+  font-family: var(--heading-font);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faqs button span {
+  flex: 1;
+  min-width: 0;
+}
+
+.faqs b {
+  flex: 0 0 auto;
+  color: var(--sunex-accent);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.faqs p {
+  display: none;
+  margin: 0;
+  padding: 0 22px 22px;
+  color: var(--sunex-text);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.open p {
+  display: block;
+}
+
+/* Large laptops */
+@media (max-width: 1200px) {
+  .grid {
+    width: min(100% - 44px, 980px);
+    gap: 48px;
+  }
+
+  .image {
+    max-width: 470px;
+  }
+
+  .faqs button {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .faqs p {
+    padding: 0 20px 20px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .grid {
+    width: min(100% - 48px, 760px);
+    grid-template-columns: 1fr;
+    gap: 42px;
+    align-items: center;
+  }
+
+  .left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 620px;
+    margin: 26px auto 0;
+    align-self: center;
+  }
+
+  .image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  .faqs {
+    gap: 14px;
+  }
+
+  .faqs button {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .faqs p {
+    padding: 0 20px 20px;
+    font-size: 14.5px;
+  }
+}
+
+/* Small tablets and large phones */
+@media (max-width: 767px) {
+  .grid {
+    width: min(100% - 32px, 100%);
+    gap: 34px;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
+    border-radius: 12px;
+  }
+
+  .image img {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 11;
+    border-radius: 12px;
+  }
+
+  .faqs {
+    gap: 13px;
+  }
+
+  .faqs article {
+    border-radius: 9px;
+  }
+
+  .faqs button {
+    gap: 12px;
+    padding: 18px 16px;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .faqs b {
+    font-size: 22px;
+  }
+
+  .faqs p {
+    padding: 0 16px 18px;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .grid {
+    width: min(100% - 24px, 100%);
+    gap: 28px;
+  }
+
+  .image {
+    margin-top: 22px;
+  }
+
+  .image img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .faqs {
+    gap: 12px;
+  }
+
+  .faqs button {
+    padding: 16px 14px;
+    font-size: 17px;
+  }
+
+  .faqs b {
+    font-size: 20px;
+  }
+
+  .faqs p {
+    padding: 0 14px 16px;
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .grid {
+    width: min(100% - 20px, 100%);
+    gap: 24px;
+  }
+
+  .image {
+    border-radius: 10px;
+  }
+
+  .image img {
+    border-radius: 10px;
+  }
+
+  .faqs button {
+    padding: 14px 12px;
+    font-size: 16px;
+  }
+
+  .faqs p {
+    padding: 0 12px 14px;
+    font-size: 13px;
+  }
+}

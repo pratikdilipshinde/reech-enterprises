@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/ui/SectionTitle.module.css"],"sourcesContent":[".wrap { margin-bottom: 44px; }\n.wrap h3 {\n  display: inline-flex; align-items: center; gap: 8px; margin: 0 0 14px; padding: 7px 16px;\n  border-radius: 999px; background: #f4f8fa; color: var(--sunex-dark); font-size: 12px; font-weight: 800; line-height: 1;\n}\n.wrap h3::before { content: \"\"; width: 7px; height: 7px; border-radius: 50%; background: var(--sunex-accent); }\n.wrap h2 { max-width: 760px; margin: 0; color: var(--sunex-dark); font-family: var(--heading-font); font-size: clamp(38px, 5vw, 70px); font-weight: 600; line-height: 0.98; letter-spacing: -0.045em; }\n.center { text-align: center; }\n.center h2 { margin-inline: auto; }\n.light h3 { background: rgba(255,255,255,0.1); color: var(--sunex-white); }\n.light h2 { color: var(--sunex-white); }\n@media (max-width: 767px) { .wrap { margin-bottom: 34px; } .wrap h2 { font-size: clamp(36px, 11vw, 52px); } }\n"],"names":[],"mappings":"AAAA;;;;AACA;;;;;;;;;;;;;;AAIA;;;;;;;;AACA;;;;;;;;;;;AACA;;;;AACA;;;;AACA;;;;;AACA;;;;AACA;EAA4B;;;;EAA+B"}}]
+}
