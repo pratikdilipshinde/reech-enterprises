@@ -37,123 +37,121 @@ const siteConfig = {
     ]
 };
 const navItems = [
-    // { label: "Home", href: "/" },
-    // { label: "About Us", href: "/about-us" },
     {
         label: "Solar Services",
-        href: "/services",
+        href: "#",
         children: [
             {
                 label: "Solar Installation",
-                href: "/services/solar-battery-storage"
+                href: "/services/solar-installation"
             },
             {
                 label: "Solar Expansion",
-                href: "/services/solar-battery-storage"
+                href: "/services/solar-system-expansions"
             },
             {
                 label: "Ground-Mounted Solar",
-                href: "/services/solar-battery-storage"
+                href: "/services/ground-mounted-solar-systems"
             },
             {
                 label: "Solar Patios & Carports",
-                href: "/services/solar-battery-storage"
+                href: "/services/solar-patios-carports"
             }
         ]
     },
     {
         label: "Battery & Energy",
-        href: "/services",
+        href: "#",
         children: [
             {
                 label: "Battery Backup & Energy Storage",
-                href: "/services/solar-battery-storage"
+                href: "/services/battery-backup-energy-storage"
             },
             {
                 label: "Tesla Powerwall",
-                href: "/services/solar-battery-storage"
+                href: "/services/battery-backup-energy-storage#tesla-powerwall"
             },
             {
                 label: "Enphase IQ Battery",
-                href: "/services/solar-battery-storage"
+                href: "/services/battery-backup-energy-storage#enphase-iq-battery"
             },
             {
                 label: "SolarEdge Home Battery",
-                href: "/services/solar-battery-storage"
+                href: "/services/battery-backup-energy-storage#solaredge-home-battery"
             }
         ]
     },
     {
         label: "Roofing",
-        href: "/services",
+        href: "#",
         children: [
             {
                 label: "Roofing Services",
-                href: "/services/solar-battery-storage"
+                href: "/services/roofing-services"
             },
             {
                 label: "Solar Removal & Reinstallation",
-                href: "/services/solar-battery-storage"
+                href: "/services/solar-removal-reinstallation"
             }
         ]
     },
     {
         label: "Maintenance Plans",
-        href: "/services",
+        href: "#",
         children: [
             {
                 label: "Solar Maintenance Plan",
-                href: "/services/solar-battery-storage"
+                href: "/services/reech-solar-maintenance-plan"
             },
             {
                 label: "Solar Repair & Diagnostics",
-                href: "/services/solar-battery-storage"
+                href: "/services/solar-repair-diagnostics"
             },
             {
                 label: "Solar Panel Cleaning",
-                href: "/services/solar-battery-storage"
+                href: "/services/solar-panel-cleaning"
             },
             {
                 label: "Orphaned Solar System Support",
-                href: "/services/solar-battery-storage"
+                href: "/services/orphaned-solar-system-support"
             }
         ]
     },
     {
         label: "Real Estate & ADU",
-        href: "/services",
+        href: "#",
         children: [
             {
                 label: "ADU & Title 24 Solar",
-                href: "/services/solar-battery-storage"
+                href: "/services/adu-title-24-solar"
             },
             {
                 label: "Realtor & Home Sale Solar Reports",
-                href: "/services/solar-battery-storage"
+                href: "/services/realtor-home-sale-solar-reports"
             }
         ]
     }
 ];
 const stats = [
     {
-        value: 25,
+        value: 15,
         suffix: "+",
         label: "Years Of Experience"
     },
     {
-        value: 2000,
+        value: 13,
         suffix: "+",
-        label: "Reviews"
+        label: "Service Categories"
     },
     {
-        value: 4200,
-        suffix: "+",
-        label: "Happy Customers"
+        value: 4,
+        suffix: "",
+        label: "Maintenance Plans"
     },
     {
-        value: 3000,
-        suffix: "+",
-        label: "Solar Installations"
+        value: 100,
+        suffix: "%",
+        label: "Lifecycle Solar Support"
     }
 ];
 const footerLinks = [
@@ -162,16 +160,24 @@ const footerLinks = [
         href: "/about-us"
     },
     {
-        label: "Services",
+        label: "All Services",
         href: "/services"
     },
     {
-        label: "Projects",
-        href: "/projects"
+        label: "Solar Installation",
+        href: "/services/solar-installation"
     },
     {
-        label: "Pricing Plans",
-        href: "/pricing-plans"
+        label: "Battery Backup",
+        href: "/services/battery-backup-energy-storage"
+    },
+    {
+        label: "Roofing Services",
+        href: "/services/roofing-services"
+    },
+    {
+        label: "Maintenance Plans",
+        href: "/services/reech-solar-maintenance-plan"
     },
     {
         label: "FAQs",
@@ -189,6 +195,8 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/components/layout/Navbar.module.css [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
+  "active": "Navbar-module__cRh5nW__active",
+  "chevron": "Navbar-module__cRh5nW__chevron",
   "cta": "Navbar-module__cRh5nW__cta",
   "dropdown": "Navbar-module__cRh5nW__dropdown",
   "header": "Navbar-module__cRh5nW__header",
@@ -196,6 +204,7 @@ __turbopack_context__.v({
   "menu": "Navbar-module__cRh5nW__menu",
   "navbar": "Navbar-module__cRh5nW__navbar",
   "open": "Navbar-module__cRh5nW__open",
+  "parentButton": "Navbar-module__cRh5nW__parentButton",
   "toggle": "Navbar-module__cRh5nW__toggle",
 });
 }),
@@ -223,6 +232,14 @@ var _s = __turbopack_context__.k.signature();
 function Navbar() {
     _s();
     const [open, setOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [activeMenu, setActiveMenu] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const toggleParentMenu = (label)=>{
+        setActiveMenu((current)=>current === label ? null : label);
+    };
+    const closeMobileMenu = ()=>{
+        setOpen(false);
+        setActiveMenu(null);
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].header,
         "data-header": true,
@@ -241,67 +258,89 @@ function Navbar() {
                         priority: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/layout/Navbar.tsx",
-                        lineNumber: 15,
+                        lineNumber: 26,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/layout/Navbar.tsx",
-                    lineNumber: 14,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                     className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].menu} ${open ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].open : ""}`,
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                        children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["navItems"].map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                        children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["navItems"].map((item)=>{
+                            const hasChildren = Boolean(item.children?.length);
+                            const isActive = activeMenu === item.label;
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                className: isActive ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].active : "",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: item.href,
-                                        onClick: ()=>!item.children && setOpen(false),
+                                    hasChildren ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        type: "button",
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].parentButton,
+                                        onClick: ()=>toggleParentMenu(item.label),
+                                        "aria-expanded": isActive,
                                         children: [
-                                            item.label,
-                                            item.children && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                children: item.label
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/layout/Navbar.tsx",
+                                                lineNumber: 53,
+                                                columnNumber: 23
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].chevron,
                                                 children: "⌄"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/layout/Navbar.tsx",
-                                                lineNumber: 22,
-                                                columnNumber: 49
+                                                lineNumber: 54,
+                                                columnNumber: 23
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/layout/Navbar.tsx",
-                                        lineNumber: 21,
-                                        columnNumber: 17
+                                        lineNumber: 47,
+                                        columnNumber: 21
+                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: item.href,
+                                        onClick: closeMobileMenu,
+                                        children: item.label
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/layout/Navbar.tsx",
+                                        lineNumber: 57,
+                                        columnNumber: 21
                                     }, this),
-                                    item.children && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    hasChildren && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].dropdown,
-                                        children: item.children.map((child)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        children: item.children?.map((child)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 href: child.href,
-                                                onClick: ()=>setOpen(false),
+                                                onClick: closeMobileMenu,
                                                 children: child.label
                                             }, child.label, false, {
                                                 fileName: "[project]/src/components/layout/Navbar.tsx",
-                                                lineNumber: 24,
-                                                columnNumber: 98
+                                                lineNumber: 65,
+                                                columnNumber: 25
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/layout/Navbar.tsx",
-                                        lineNumber: 24,
-                                        columnNumber: 35
+                                        lineNumber: 63,
+                                        columnNumber: 21
                                     }, this)
                                 ]
                             }, item.label, true, {
                                 fileName: "[project]/src/components/layout/Navbar.tsx",
-                                lineNumber: 20,
-                                columnNumber: 15
-                            }, this))
+                                lineNumber: 42,
+                                columnNumber: 17
+                            }, this);
+                        })
                     }, void 0, false, {
                         fileName: "[project]/src/components/layout/Navbar.tsx",
-                        lineNumber: 18,
+                        lineNumber: 36,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/layout/Navbar.tsx",
-                    lineNumber: 17,
+                    lineNumber: 35,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -312,46 +351,49 @@ function Navbar() {
                             children: "↗"
                         }, void 0, false, {
                             fileName: "[project]/src/components/layout/Navbar.tsx",
-                            lineNumber: 29,
-                            columnNumber: 72
+                            lineNumber: 82,
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             children: "Contact Us"
                         }, void 0, false, {
                             fileName: "[project]/src/components/layout/Navbar.tsx",
-                            lineNumber: 29,
-                            columnNumber: 86
+                            lineNumber: 83,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/layout/Navbar.tsx",
-                    lineNumber: 29,
+                    lineNumber: 81,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].toggle,
                     type: "button",
                     "aria-label": "Toggle menu",
-                    onClick: ()=>setOpen((v)=>!v),
+                    onClick: ()=>{
+                        setOpen((value)=>!value);
+                        setActiveMenu(null);
+                    },
                     children: open ? "×" : "☰"
                 }, void 0, false, {
                     fileName: "[project]/src/components/layout/Navbar.tsx",
-                    lineNumber: 30,
+                    lineNumber: 86,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/layout/Navbar.tsx",
-            lineNumber: 13,
+            lineNumber: 24,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/layout/Navbar.tsx",
-        lineNumber: 12,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 }
-_s(Navbar, "xG1TONbKtDWtdOTrXaTAsNhPg/Q=");
+_s(Navbar, "BL0OB5jfVVKr+Si8SUNCv8XsyPM=");
 _c = Navbar;
 var _c;
 __turbopack_context__.k.register(_c, "Navbar");

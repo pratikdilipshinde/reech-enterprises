@@ -37,123 +37,121 @@ const siteConfig = {
     ]
 };
 const navItems = [
-    // { label: "Home", href: "/" },
-    // { label: "About Us", href: "/about-us" },
     {
         label: "Solar Services",
-        href: "/services",
+        href: "#",
         children: [
             {
                 label: "Solar Installation",
-                href: "/services/solar-battery-storage"
+                href: "/services/solar-installation"
             },
             {
                 label: "Solar Expansion",
-                href: "/services/solar-battery-storage"
+                href: "/services/solar-system-expansions"
             },
             {
                 label: "Ground-Mounted Solar",
-                href: "/services/solar-battery-storage"
+                href: "/services/ground-mounted-solar-systems"
             },
             {
                 label: "Solar Patios & Carports",
-                href: "/services/solar-battery-storage"
+                href: "/services/solar-patios-carports"
             }
         ]
     },
     {
         label: "Battery & Energy",
-        href: "/services",
+        href: "#",
         children: [
             {
                 label: "Battery Backup & Energy Storage",
-                href: "/services/solar-battery-storage"
+                href: "/services/battery-backup-energy-storage"
             },
             {
                 label: "Tesla Powerwall",
-                href: "/services/solar-battery-storage"
+                href: "/services/battery-backup-energy-storage#tesla-powerwall"
             },
             {
                 label: "Enphase IQ Battery",
-                href: "/services/solar-battery-storage"
+                href: "/services/battery-backup-energy-storage#enphase-iq-battery"
             },
             {
                 label: "SolarEdge Home Battery",
-                href: "/services/solar-battery-storage"
+                href: "/services/battery-backup-energy-storage#solaredge-home-battery"
             }
         ]
     },
     {
         label: "Roofing",
-        href: "/services",
+        href: "#",
         children: [
             {
                 label: "Roofing Services",
-                href: "/services/solar-battery-storage"
+                href: "/services/roofing-services"
             },
             {
                 label: "Solar Removal & Reinstallation",
-                href: "/services/solar-battery-storage"
+                href: "/services/solar-removal-reinstallation"
             }
         ]
     },
     {
         label: "Maintenance Plans",
-        href: "/services",
+        href: "#",
         children: [
             {
                 label: "Solar Maintenance Plan",
-                href: "/services/solar-battery-storage"
+                href: "/services/reech-solar-maintenance-plan"
             },
             {
                 label: "Solar Repair & Diagnostics",
-                href: "/services/solar-battery-storage"
+                href: "/services/solar-repair-diagnostics"
             },
             {
                 label: "Solar Panel Cleaning",
-                href: "/services/solar-battery-storage"
+                href: "/services/solar-panel-cleaning"
             },
             {
                 label: "Orphaned Solar System Support",
-                href: "/services/solar-battery-storage"
+                href: "/services/orphaned-solar-system-support"
             }
         ]
     },
     {
         label: "Real Estate & ADU",
-        href: "/services",
+        href: "#",
         children: [
             {
                 label: "ADU & Title 24 Solar",
-                href: "/services/solar-battery-storage"
+                href: "/services/adu-title-24-solar"
             },
             {
                 label: "Realtor & Home Sale Solar Reports",
-                href: "/services/solar-battery-storage"
+                href: "/services/realtor-home-sale-solar-reports"
             }
         ]
     }
 ];
 const stats = [
     {
-        value: 25,
+        value: 15,
         suffix: "+",
         label: "Years Of Experience"
     },
     {
-        value: 2000,
+        value: 13,
         suffix: "+",
-        label: "Reviews"
+        label: "Service Categories"
     },
     {
-        value: 4200,
-        suffix: "+",
-        label: "Happy Customers"
+        value: 4,
+        suffix: "",
+        label: "Maintenance Plans"
     },
     {
-        value: 3000,
-        suffix: "+",
-        label: "Solar Installations"
+        value: 100,
+        suffix: "%",
+        label: "Lifecycle Solar Support"
     }
 ];
 const footerLinks = [
@@ -162,16 +160,24 @@ const footerLinks = [
         href: "/about-us"
     },
     {
-        label: "Services",
+        label: "All Services",
         href: "/services"
     },
     {
-        label: "Projects",
-        href: "/projects"
+        label: "Solar Installation",
+        href: "/services/solar-installation"
     },
     {
-        label: "Pricing Plans",
-        href: "/pricing-plans"
+        label: "Battery Backup",
+        href: "/services/battery-backup-energy-storage"
+    },
+    {
+        label: "Roofing Services",
+        href: "/services/roofing-services"
+    },
+    {
+        label: "Maintenance Plans",
+        href: "/services/reech-solar-maintenance-plan"
     },
     {
         label: "FAQs",

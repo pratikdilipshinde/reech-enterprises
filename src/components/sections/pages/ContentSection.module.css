@@ -1,15 +1,641 @@
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-.two { grid-template-columns: repeat(2, 1fr); }
-.card { padding: 32px; border-radius: 12px; background: var(--sunex-white); box-shadow: var(--shadow-soft); }
-.card h3 { margin: 0 0 12px; color: var(--sunex-dark); font-family: var(--heading-font); font-size: 28px; line-height: 1.2; }
-.card p, .card li { color: var(--sunex-text); line-height: 1.75; }
-.imageCard { border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft); }
-.imageCard img { width: 100%; height: 280px; object-fit: cover; }
-.teamImage img { height: 340px; }
-.contactGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
-.form { padding: 34px; border-radius: 12px; background: var(--sunex-white); box-shadow: var(--shadow-soft); display: grid; gap: 16px; }
-.form input, .form textarea, .form select { width: 100%; border: 1px solid rgba(0,26,41,.12); border-radius: 7px; padding: 14px; outline: 0; }
-.form textarea { min-height: 140px; resize: vertical; }
-.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; }
-@media (max-width: 1024px) { .grid, .two, .contactGrid, .gallery { grid-template-columns: 1fr; } }
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card {
+  min-width: 0;
+  padding: 32px;
+  border-radius: 12px;
+  background: var(--sunex-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.card h3 {
+  margin: 0 0 12px;
+  color: var(--sunex-dark);
+  font-family: var(--heading-font);
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.card p,
+.card li {
+  color: var(--sunex-text);
+  line-height: 1.75;
+}
+
+.imageCard {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  background: var(--sunex-white);
+}
+
+.imageCard img {
+  width: 100%;
+  height: 280px;
+  display: block;
+  object-fit: cover;
+}
+
+.teamImage img {
+  height: 340px;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.form {
+  padding: 34px;
+  border-radius: 12px;
+  background: var(--sunex-white);
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 16px;
+}
+
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  border: 1px solid rgba(0, 26, 41, 0.12);
+  border-radius: 7px;
+  padding: 14px;
+  outline: 0;
+  color: var(--sunex-dark);
+  background: var(--sunex-white);
+}
+
+.form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Service Details Page */
+.serviceDetailsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.serviceDetailsGrid .imageCard img {
+  height: auto;
+  min-height: 420px;
+  object-fit: cover;
+}
+
+.serviceContentCard {
+  padding: 42px;
+  border-radius: 16px;
+  background: var(--sunex-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: #e4e4e4;
+  color: var(--sunex-dark);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  flex: 0 0 6px;
+  border-radius: 50%;
+  background: var(--sunex-accent);
+}
+
+.serviceContentCard h2 {
+  margin: 0;
+  color: var(--sunex-dark);
+  font-family: var(--heading-font);
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.serviceContentCard p {
+  margin: 22px 0 0;
+  color: var(--sunex-text);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.benefitsList {
+  display: grid;
+  gap: 14px;
+  margin: 30px 0;
+}
+
+.benefitsList div {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--sunex-dark);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.benefitsList svg {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: var(--sunex-accent);
+}
+
+.platformIntro {
+  max-width: 780px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.platformIntro h2 {
+  margin: 0;
+  color: var(--sunex-dark);
+  font-family: var(--heading-font);
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.platformIntro p {
+  margin: 18px 0 0;
+  color: var(--sunex-text);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.platformGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.platformGrid article {
+  padding: 28px;
+  border-radius: 14px;
+  background: var(--sunex-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.platformGrid h3 {
+  margin: 0 0 10px;
+  color: var(--sunex-dark);
+  font-family: var(--heading-font);
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.platformGrid p {
+  margin: 0;
+  color: var(--sunex-text);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.note {
+  max-width: 520px;
+  margin: 28px auto 0;
+  padding: 16px 20px;
+  border-radius: 10px;
+  background: rgba(76, 166, 38, 0.1);
+  color: var(--sunex-dark);
+  font-weight: 800;
+  text-align: center;
+}
+
+.relatedHeader {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.relatedHeader h2 {
+  margin: 0;
+  color: var(--sunex-dark);
+  font-family: var(--heading-font);
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.centerAction {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+}
+
+/* Large laptops */
+@media (max-width: 1200px) {
+  .grid {
+    gap: 24px;
+  }
+
+  .card {
+    padding: 28px;
+  }
+
+  .card h3 {
+    font-size: 25px;
+  }
+
+  .serviceDetailsGrid {
+    gap: 44px;
+  }
+
+  .serviceContentCard {
+    padding: 36px;
+  }
+
+  .platformGrid {
+    gap: 20px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .grid,
+  .two,
+  .contactGrid,
+  .serviceDetailsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid,
+  .contactGrid,
+  .serviceDetailsGrid,
+  .gallery {
+    width: min(100% - 48px, 760px);
+    margin-inline: auto;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .serviceDetailsGrid {
+    gap: 42px;
+  }
+
+  .serviceDetailsGrid .imageCard img {
+    min-height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  .serviceContentCard {
+    padding: 34px;
+  }
+
+  .platformGrid {
+    width: min(100% - 48px, 760px);
+    margin-inline: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .platformIntro {
+    width: min(100% - 48px, 760px);
+  }
+}
+
+/* Small tablets and large phones */
+@media (max-width: 767px) {
+  .grid,
+  .contactGrid,
+  .serviceDetailsGrid,
+  .gallery,
+  .platformGrid,
+  .platformIntro {
+    width: min(100% - 32px, 100%);
+  }
+
+  .grid,
+  .gallery,
+  .platformGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .card {
+    padding: 26px 22px;
+  }
+
+  .card h3 {
+    font-size: 24px;
+  }
+
+  .imageCard img {
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  .teamImage img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .gallery img {
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  .form {
+    padding: 28px 22px;
+  }
+
+  .serviceDetailsGrid {
+    gap: 30px;
+  }
+
+  .serviceContentCard {
+    padding: 28px 22px;
+  }
+
+  .serviceContentCard p {
+    font-size: 15px;
+  }
+
+  .platformGrid article {
+    padding: 24px 20px;
+  }
+
+  .centerAction :global(.theme-btn) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .grid,
+  .contactGrid,
+  .serviceDetailsGrid,
+  .gallery,
+  .platformGrid,
+  .platformIntro {
+    width: min(100% - 24px, 100%);
+  }
+
+  .grid,
+  .gallery,
+  .platformGrid {
+    gap: 22px;
+  }
+
+  .card {
+    padding: 24px 20px;
+    border-radius: 10px;
+  }
+
+  .card h3 {
+    font-size: 22px;
+  }
+
+  .card p,
+  .card li {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .imageCard {
+    border-radius: 10px;
+  }
+
+  .form {
+    padding: 24px 20px;
+  }
+
+  .form input,
+  .form textarea,
+  .form select {
+    padding: 13px;
+  }
+
+  .serviceContentCard {
+    padding: 24px 20px;
+    border-radius: 12px;
+  }
+
+  .serviceContentCard h2 {
+    font-size: 31px;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 7px 14px;
+  }
+
+  .benefitsList {
+    margin: 26px 0;
+  }
+
+  .platformIntro {
+    margin-bottom: 34px;
+  }
+
+  .platformIntro h2,
+  .relatedHeader h2 {
+    font-size: 31px;
+  }
+
+  .platformGrid article {
+    padding: 22px 18px;
+  }
+
+  .platformGrid h3 {
+    font-size: 21px;
+  }
+
+  .note {
+    font-size: 14px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .grid,
+  .contactGrid,
+  .serviceDetailsGrid,
+  .gallery,
+  .platformGrid,
+  .platformIntro {
+    width: min(100% - 20px, 100%);
+  }
+
+  .card {
+    padding: 22px 18px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .form {
+    padding: 22px 18px;
+  }
+
+  .serviceContentCard {
+    padding: 22px 18px;
+  }
+
+  .serviceContentCard h2 {
+    font-size: 29px;
+  }
+
+  .platformIntro h2,
+  .relatedHeader h2 {
+    font-size: 29px;
+  }
+
+  .platformGrid article {
+    padding: 20px 16px;
+  }
+}
+
+.solarFeatureGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.solarFeatureGrid article {
+  min-width: 0;
+  padding: 30px 24px;
+  border-radius: 14px;
+  background: var(--sunex-white);
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.solarFeatureGrid article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0, 26, 41, 0.1);
+}
+
+.solarFeatureGrid span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background: var(--sunex-accent);
+  color: var(--sunex-white);
+  font-family: var(--heading-font);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.solarFeatureGrid h3 {
+  margin: 0 0 12px;
+  color: var(--sunex-dark);
+  font-family: var(--heading-font);
+  font-size: 23px;
+  line-height: 1.2;
+}
+
+.solarFeatureGrid p {
+  margin: 0;
+  color: var(--sunex-text);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+@media (max-width: 1200px) {
+  .solarFeatureGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .solarFeatureGrid {
+    width: min(100% - 48px, 760px);
+    margin-inline: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .solarFeatureGrid {
+    width: min(100% - 32px, 100%);
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .solarFeatureGrid article {
+    padding: 26px 22px;
+  }
+
+  .solarFeatureGrid h3 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 480px) {
+  .solarFeatureGrid {
+    width: min(100% - 24px, 100%);
+  }
+
+  .solarFeatureGrid article {
+    padding: 24px 20px;
+  }
+
+  .solarFeatureGrid span {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+
+  .solarFeatureGrid h3 {
+    font-size: 20px;
+  }
+
+  .solarFeatureGrid p {
+    font-size: 13.5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .solarFeatureGrid {
+    width: min(100% - 20px, 100%);
+  }
+
+  .solarFeatureGrid article {
+    padding: 22px 18px;
+  }
+}

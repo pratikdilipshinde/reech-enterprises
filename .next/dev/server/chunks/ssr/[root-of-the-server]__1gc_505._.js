@@ -253,12 +253,22 @@ const projectImages = [
 "[project]/src/components/sections/pages/ContentSection.module.css [app-rsc] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
+  "badge": "ContentSection-module__PgWUvq__badge",
+  "benefitsList": "ContentSection-module__PgWUvq__benefitsList",
   "card": "ContentSection-module__PgWUvq__card",
+  "centerAction": "ContentSection-module__PgWUvq__centerAction",
   "contactGrid": "ContentSection-module__PgWUvq__contactGrid",
   "form": "ContentSection-module__PgWUvq__form",
   "gallery": "ContentSection-module__PgWUvq__gallery",
   "grid": "ContentSection-module__PgWUvq__grid",
   "imageCard": "ContentSection-module__PgWUvq__imageCard",
+  "note": "ContentSection-module__PgWUvq__note",
+  "platformGrid": "ContentSection-module__PgWUvq__platformGrid",
+  "platformIntro": "ContentSection-module__PgWUvq__platformIntro",
+  "relatedHeader": "ContentSection-module__PgWUvq__relatedHeader",
+  "serviceContentCard": "ContentSection-module__PgWUvq__serviceContentCard",
+  "serviceDetailsGrid": "ContentSection-module__PgWUvq__serviceDetailsGrid",
+  "solarFeatureGrid": "ContentSection-module__PgWUvq__solarFeatureGrid",
   "teamImage": "ContentSection-module__PgWUvq__teamImage",
   "two": "ContentSection-module__PgWUvq__two",
 });

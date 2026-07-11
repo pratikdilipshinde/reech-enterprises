@@ -212,12 +212,22 @@ function ServiceCard({ service }) {
 "[project]/src/components/sections/pages/ContentSection.module.css [app-rsc] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
+  "badge": "ContentSection-module__PgWUvq__badge",
+  "benefitsList": "ContentSection-module__PgWUvq__benefitsList",
   "card": "ContentSection-module__PgWUvq__card",
+  "centerAction": "ContentSection-module__PgWUvq__centerAction",
   "contactGrid": "ContentSection-module__PgWUvq__contactGrid",
   "form": "ContentSection-module__PgWUvq__form",
   "gallery": "ContentSection-module__PgWUvq__gallery",
   "grid": "ContentSection-module__PgWUvq__grid",
   "imageCard": "ContentSection-module__PgWUvq__imageCard",
+  "note": "ContentSection-module__PgWUvq__note",
+  "platformGrid": "ContentSection-module__PgWUvq__platformGrid",
+  "platformIntro": "ContentSection-module__PgWUvq__platformIntro",
+  "relatedHeader": "ContentSection-module__PgWUvq__relatedHeader",
+  "serviceContentCard": "ContentSection-module__PgWUvq__serviceContentCard",
+  "serviceDetailsGrid": "ContentSection-module__PgWUvq__serviceDetailsGrid",
+  "solarFeatureGrid": "ContentSection-module__PgWUvq__solarFeatureGrid",
   "teamImage": "ContentSection-module__PgWUvq__teamImage",
   "two": "ContentSection-module__PgWUvq__two",
 });
@@ -227,7 +237,9 @@ __turbopack_context__.v({
 
 __turbopack_context__.s([
     "default",
-    ()=>ServicesPage
+    ()=>ServicesPage,
+    "metadata",
+    ()=>metadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$PageHeader$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/PageHeader.tsx [app-rsc] (ecmascript)");
@@ -241,15 +253,19 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$section
 ;
 ;
 ;
+const metadata = {
+    title: "Solar, Roofing, Battery & Maintenance Services | Reech Solar Enterprises",
+    description: "Explore Reech Solar Enterprises services including solar installation, solar expansions, battery backup, roofing, solar repair, panel cleaning, maintenance plans, ADU solar, and solar property reports."
+};
 function ServicesPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$PageHeader$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                title: "Services",
-                description: "Explore clean energy services designed for homes, businesses, solar owners, and long-term support."
+                title: "Our Services",
+                description: "Complete solar, roofing, battery, maintenance, and energy support for Southern California homeowners."
             }, void 0, false, {
                 fileName: "[project]/src/app/services/page.tsx",
-                lineNumber: 10,
+                lineNumber: 16,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -258,12 +274,12 @@ function ServicesPage() {
                     className: "container",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$SectionTitle$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                            eyebrow: "Our Services",
-                            title: "Smart solar service designed for homes & businesses",
+                            eyebrow: "Reech Services",
+                            title: "Complete solar ownership support",
                             align: "center"
                         }, void 0, false, {
                             fileName: "[project]/src/app/services/page.tsx",
-                            lineNumber: 13,
+                            lineNumber: 23,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -272,29 +288,29 @@ function ServicesPage() {
                                     service: service
                                 }, service.slug, false, {
                                     fileName: "[project]/src/app/services/page.tsx",
-                                    lineNumber: 14,
-                                    columnNumber: 67
+                                    lineNumber: 31,
+                                    columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/services/page.tsx",
-                            lineNumber: 14,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/services/page.tsx",
-                    lineNumber: 12,
+                    lineNumber: 22,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/services/page.tsx",
-                lineNumber: 11,
+                lineNumber: 21,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/services/page.tsx",
-        lineNumber: 9,
+        lineNumber: 15,
         columnNumber: 5
     }, this);
 }
