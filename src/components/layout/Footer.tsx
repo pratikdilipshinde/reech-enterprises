@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container">
         <div className={styles.top}>
           <div>
-            <Image src="/images/reech-logo-hori.png" alt={siteConfig.logoAlt} width={160} height={45} />
+            <Image src="/images/logo.png" alt={siteConfig.logoAlt} width={160} height={45} />
             <p>Powering homes and businesses with smarter, cleaner, and more reliable solar energy solutions.</p>
           </div>
           <div>

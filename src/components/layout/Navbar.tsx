@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className={`container ${styles.navbar}`}>
         <Link href="/" className={styles.logo} aria-label="Home">
           <Image
-            src="/images/reech-logo-hori.png"
+            src="/images/logo.png"
             alt="Reech Solar Enterprises"
             width={140}
             height={65}

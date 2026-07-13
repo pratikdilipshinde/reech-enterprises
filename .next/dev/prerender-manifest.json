@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/services/solar-installation":{},"/services/solar-system-expansions":{},"/services/ground-mounted-solar-systems":{},"/services/solar-patios-carports":{},"/services/battery-backup-energy-storage":{},"/services/roofing-services":{},"/services/solar-removal-reinstallation":{},"/services/reech-solar-maintenance-plan":{},"/services/solar-repair-diagnostics":{},"/services/solar-panel-cleaning":{},"/services/orphaned-solar-system-support":{},"/services/adu-title-24-solar":{},"/services/realtor-home-sale-solar-reports":{}},"dynamicRoutes":{"/services/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/services/[slug]","routeRegex":"^\\/services\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"76dcd580a5d9931393f1ca28cd69c76c","previewModeSigningKey":"eff222c8c00bed99b64cd67942b8ef0f29393c92cb7bde55679f5a0455fde400","previewModeEncryptionKey":"1b238f37397bc6e08b13cf999ca80d2472f5c734d92ffa4d5a2c21f1c5d1a109"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "edd6de27665d23600867f07ee70720a8",
+    "previewModeSigningKey": "0f861b0f6d6a908394b5ebc8a8d77837dae5344cc0ce58a33772ef6a39281b68",
+    "previewModeEncryptionKey": "af1ed2c44b9c8d20365e1fe883dc77b9478f44246bb7111ad9b86559050661a0"
+  }
+}

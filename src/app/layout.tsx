@@ -5,9 +5,30 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import TemplateMotion from "@/components/animations/TemplateMotion";
 
-export const metadata: Metadata = {
-  title: "Reech Solar Enterprises | Solar Energy Website",
-  description: "Home Version 1 Next.js modular website based on the Sunex solar template style.",
+export const metadata = {
+  title: "Reech Solar Enterprises",
+  description:
+    "Southern California solar, roofing, battery storage, maintenance, diagnostics, and energy consulting services.",
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico",
+        sizes: "any",
+      },
+      {
+        url: "/icon.png",
+        type: "image/png",
+        sizes: "512x512",
+      },
+    ],
+    // apple: [
+    //   {
+    //     url: "/apple-icon.png",
+    //     sizes: "180x180",
+    //     type: "image/png",
+    //   },
+    // ],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
