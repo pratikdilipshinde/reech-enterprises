@@ -12,18 +12,18 @@ export const metadata = {
   icons: {
     icon: [
       {
-        url: "/favicon.ico",
+        url: "/images/favicon.ico",
         sizes: "any",
       },
       {
-        url: "/icon.png",
+        url: "/images/favicon.png",
         type: "image/png",
         sizes: "512x512",
       },
     ],
     // apple: [
     //   {
-    //     url: "/apple-icon.png",
+    //     url: "/images/favicon.png",
     //     sizes: "180x180",
     //     type: "image/png",
     //   },
