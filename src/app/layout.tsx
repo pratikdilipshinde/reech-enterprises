@@ -4,6 +4,7 @@ import TopBar from "@/components/layout/TopBar";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import TemplateMotion from "@/components/animations/TemplateMotion";
+import PageLoader from "@/components/layout/PageLoader";
 
 export const metadata = {
   title: "Reech Solar Enterprises",
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
+        <PageLoader />
         <TemplateMotion />
         <TopBar />
         <Navbar />

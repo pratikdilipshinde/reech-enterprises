@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "1af5e6d5fa2f0eccf4daccdbbdec4276",
-    "previewModeSigningKey": "00ee2939662e978209cea67ba22bc3d090ee73fcdce474134dc2de76d5c21ce4",
-    "previewModeEncryptionKey": "2cb8b7c1b98e7ae5baf97b1a63d3a498742c95c1da9ba6e7893c95530d2d3c28"
-  }
-}
+{"version":4,"routes":{"/services/solar-installation":{},"/services/solar-system-expansions":{},"/services/ground-mounted-solar-systems":{},"/services/solar-patios-carports":{},"/services/battery-backup-energy-storage":{},"/services/roofing-services":{},"/services/solar-removal-reinstallation":{},"/services/reech-solar-maintenance-plan":{},"/services/solar-repair-diagnostics":{},"/services/solar-panel-cleaning":{},"/services/orphaned-solar-system-support":{},"/services/adu-title-24-solar":{},"/services/realtor-home-sale-solar-reports":{}},"dynamicRoutes":{"/services/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/services/[slug]","routeRegex":"^\\/services\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"709d31780abec0bf093b469e6d88b985","previewModeSigningKey":"762e85992d3ce33353e5856598999c78a88baed86898d589738eca35d585ad88","previewModeEncryptionKey":"8a8aa27c1b11deb8a47ec992b8ea8886bcf578b875cdc46fa06f4d7245f9acda"}}

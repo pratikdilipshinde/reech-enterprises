@@ -1,0 +1,67 @@
+.loaderOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100dvh;
+
+  background-color: #1e3d58;
+
+  opacity: 1;
+  visibility: visible;
+
+  animation: loaderFadeIn 250ms ease-out;
+}
+
+.loaderImage {
+  display: block;
+
+  width: min(500px, 100vw);
+  height: auto;
+
+  object-fit: contain;
+}
+
+.screenReaderText {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  padding: 0;
+  margin: -1px;
+
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+
+  border: 0;
+}
+
+@keyframes loaderFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .loaderImage {
+    width: 100vw;
+    max-width: 500px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loaderOverlay {
+    animation: none;
+  }
+}

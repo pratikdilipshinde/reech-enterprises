@@ -292,6 +292,10 @@
       max-width: 96rem;
     }
   }
+
+  .hidden {
+    display: none;
+  }
 }
 
 :root {
